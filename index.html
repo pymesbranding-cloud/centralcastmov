@@ -6,7 +6,6 @@
 <title>CENTRAL CAST .MOV</title>
 <meta name="description" content="No venimos por el discurso. Venimos por lo que se les escapa.">
 <style>
-/* ===== Tokens de marca (medidos en los clips) ===== */
 :root {
   --navy: #0D1E43;
   --navy-deep: #081430;
@@ -30,8 +29,6 @@ img { max-width: 100%; display: block; }
 a { color: inherit; }
 .wrap { max-width: 1080px; margin: 0 auto; }
 section { padding-block: 64px; }
-
-/* ===== Cabecera ===== */
 .top {
   display: flex; align-items: center; justify-content: space-between;
   padding-block: 24px; gap: 16px;
@@ -41,12 +38,8 @@ section { padding-block: 64px; }
 .nav { display: flex; gap: 22px; flex-wrap: wrap; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
 .nav a { text-decoration: none; opacity: .85; }
 .nav a:hover { color: var(--red); opacity: 1; }
-
-/* ===== Íconos (marca de agua de la marca) ===== */
 .icons { width: 64px; height: 64px; flex: none; }
 .icons svg { width: 100%; height: 100%; display: block; }
-
-/* ===== Hero ===== */
 .hero h1 {
   font-family: "Arial Black", Arial, sans-serif;
   font-size: clamp(40px, 8vw, 92px);
@@ -64,8 +57,6 @@ section { padding-block: 64px; }
 }
 .btn:hover { filter: brightness(1.08); }
 .btn.ghost { background: transparent; border: 2px solid var(--red); margin-left: 10px; }
-
-/* ===== Etiquetas y títulos de sección ===== */
 .kicker {
   display: inline-block; background: var(--red); color: var(--white);
   font-size: 13px; letter-spacing: 1px; padding: 6px 14px; border-radius: 40px; text-transform: uppercase;
@@ -75,8 +66,6 @@ h2 {
   font-size: clamp(30px, 5vw, 52px); line-height: 1; text-transform: uppercase; margin: 14px 0 28px;
 }
 h2 em { font-style: normal; color: var(--red); }
-
-/* ===== Destacado (video del gol) ===== */
 .feature {
   display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center;
   border-top: 1px solid var(--line); padding-top: 48px;
@@ -95,8 +84,6 @@ h2 em { font-style: normal; color: var(--red); }
   letter-spacing: 1px; overflow-wrap: anywhere;
 }
 .score b { color: var(--red); }
-
-/* ===== Expedientes (carruseles) ===== */
 .grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 18px;
 }
@@ -110,13 +97,8 @@ h2 em { font-style: normal; color: var(--red); }
 .card .year { font-family: "Arial Black", Arial, sans-serif; font-size: 52px; line-height: 1; }
 .card .title { font-size: 15px; font-weight: 700; text-transform: uppercase; margin-top: 10px; }
 .card .meta { margin-top: 14px; font-size: 12px; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; }
-.card .slides { font-size: 12px; color: var(--muted); }
-
-/* ===== Sobre ===== */
 .about p { max-width: 720px; color: var(--muted); font-size: 18px; margin-bottom: 14px; }
 .about p strong { color: var(--white); }
-
-/* ===== Redes ===== */
 .socials { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
 .social {
   display: flex; align-items: center; justify-content: space-between;
@@ -125,8 +107,6 @@ h2 em { font-style: normal; color: var(--red); }
 }
 .social:hover { background: var(--red); }
 .social small { color: var(--muted); font-weight: 400; text-transform: none; letter-spacing: 0; display: block; }
-
-/* ===== Pie con cuadrícula ===== */
 footer {
   position: relative; margin-top: 40px; padding-block: 36px 60px;
   border-top: 3px solid var(--red);
@@ -137,8 +117,6 @@ footer {
 footer .inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
 footer .legal { font-size: 13px; color: var(--muted); }
 footer .ver { font-family: "Courier New", monospace; font-size: 12px; color: var(--muted); }
-
-/* ===== Responsive ===== */
 @media (max-width: 760px) {
   .feature { grid-template-columns: 1fr; }
   .feature > *, .grid > *, .socials > * { min-width: 0; }
@@ -159,13 +137,10 @@ footer .ver { font-family: "Courier New", monospace; font-size: 12px; color: var
   <header class="top">
     <a class="brand" href="#inicio"><i></i>CENTRAL CAST .MOV</a>
     <nav class="nav" aria-label="Principal">
-      <a href="#destacado">Destacado</a>
-      <a href="#expedientes">Expedientes</a>
       <a href="#sobre">Sobre</a>
       <a href="#redes">Redes</a>
     </nav>
     <div class="icons" aria-hidden="true">
-      <!-- marca de agua de íconos: micrófono, círculo tachado, ojo, cerebro -->
       <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
         <rect x="0" y="0" width="40" height="40" fill="#BF1641" stroke="none"/>
         <rect x="40" y="0" width="40" height="40" fill="#1F4E9A" stroke="none"/>
@@ -187,58 +162,19 @@ footer .ver { font-family: "Courier New", monospace; font-size: 12px; color: var
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero" id="inicio" style="padding-top:24px;">
-    <span class="kicker">Podcast · Expedientes</span>
+    <span class="kicker">Podcast</span>
     <h1>Cultura con filo.<br><em>Cero basura.</em></h1>
     <p class="tagline">No venimos por el discurso. Venimos por lo que se les escapa.</p>
-    <a class="btn" href="#expedientes">Ver expedientes</a>
-    <a class="btn ghost" href="#redes">Síguenos</a>
+    <a class="btn" href="#redes">Síguenos</a>
   </section>
 
-  <!-- DESTACADO -->
-  <section id="destacado">
-    <span class="kicker">Destacado</span>
-    <div class="feature" style="margin-top:20px;">
-      <div class="frame" role="img" aria-label="Espacio para el video del gol de Enner Valencia">
-        <span>Video del gol de Enner Valencia<br>(pendiente de embeber)</span>
-      </div>
-      <div>
-        <h3>Lo que se les <em>escapó</em></h3>
-        <div class="score">BOCA <b>1 - 0</b> DEFENSA Y JUSTICIA</div>
-        <p>El último gol de Enner Valencia contra Defensa y Justicia, en video.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPEDIENTES -->
-  <section id="expedientes">
-    <span class="kicker">Expedientes</span>
-    <h2>Carpetas <em>abiertas</em></h2>
-    <div class="grid">
-      <a class="card" href="https://www.instagram.com/centralcastmov/" target="_blank" rel="noopener">
-        <div><div class="no">EXP. 01</div><div class="year">1979</div><div class="title">Jaime Roldós gana las elecciones y nombra a Abdalá</div></div>
-        <div><div class="meta">Carrusel · 7 slides</div></div>
-      </a>
-      <a class="card" href="https://www.instagram.com/centralcastmov/" target="_blank" rel="noopener">
-        <div><div class="no">EXP. 02</div><div class="year">1981</div><div class="title">Huayrapungo: el accidente que Abdalá denunció como atentado</div></div>
-        <div><div class="meta">Carrusel · 7 slides</div></div>
-      </a>
-      <a class="card" href="https://www.instagram.com/centralcastmov/" target="_blank" rel="noopener">
-        <div><div class="no">EXP. 03</div><div class="year">6 MESES</div><div class="title">El mejor y el peor presidente son familia</div></div>
-        <div><div class="meta">Carrusel · 7 slides</div></div>
-      </a>
-    </div>
-  </section>
-
-  <!-- SOBRE -->
   <section class="about" id="sobre">
     <span class="kicker">Sobre el proyecto</span>
     <h2>Quiénes <em>somos</em></h2>
     <p>Ecuador tiene mucho contenido y poco contenido que deje algo. <strong>Central Cast .MOV</strong> nace para eso: un podcast de cultura e historia que se toma en serio al público. Entramos en las historias que el ruido deja fuera, con gente interesante, vidas raras y ganas de entender lo que pasó. Aquí no hay libreto ni relleno: hay criterio.</p>
   </section>
 
-  <!-- REDES -->
   <section id="redes">
     <span class="kicker">Redes</span>
     <h2>Donde <em>seguirnos</em></h2>
